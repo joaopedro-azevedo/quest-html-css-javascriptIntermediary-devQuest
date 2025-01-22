@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 100vh;
+    background: url(../media/images/bg-repeat.jpg);
+    background-size: contain;
+    font-family: Roboto;
+
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 12px 50px;
+}
+
+.container .description{
+    color: white;
+}
+
+.container .description .description-title{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.container .description .description-text{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .form{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container .form form input{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 35px;
+    
+}
