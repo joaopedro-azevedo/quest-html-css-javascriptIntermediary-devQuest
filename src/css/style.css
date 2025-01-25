@@ -41,7 +41,7 @@ body{
     justify-content: center;
 }
 
-.container .form form{
+.container .forml .form{
     height: 100%;
     width: 100%;
     display: flex;
@@ -50,7 +50,7 @@ body{
     
 }
 
-.container .form form input{
+.container .forml .form input{
     width: 100%;
     margin-bottom: 15px;
     height: 35px;
