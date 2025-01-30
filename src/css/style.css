@@ -54,5 +54,16 @@ body{
     width: 100%;
     margin-bottom: 15px;
     height: 35px;
-    
+}
+
+.filled{
+    border-color: #00C22B;
+}
+
+.notFilled{
+    border-color: #F52E2E;
+}
+
+.hide{
+    opacity: 0;
 }
