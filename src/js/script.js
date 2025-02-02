@@ -12,11 +12,11 @@ console.log(submitButton);
 
 /* criar um evento, onde, ao clicar no submit, passar pelo array inputs e ver se está preenchido ou não, se sim, colocar o estilo verde, se não, colocar o estilo vermelho */
 
-submitButton.addEventListener('submit', function(clicked){
+submitButton.addEventListener('click', function(clicked){
     clicked.preventDefault();
 
     function verificarCampos(){
-        let userInfo = document.querySelectorAll('.inputs')
+        let userInfo = document.querySelectorAll('.inputs');
         
         userInfo.forEach(function(){
             if(userInfo.values !== ''){
