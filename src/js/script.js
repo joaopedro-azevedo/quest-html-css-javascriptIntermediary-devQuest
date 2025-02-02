@@ -19,7 +19,11 @@ submitButton.addEventListener('submit', function(clicked){
         let userInfo = document.querySelectorAll('.inputs')
         
         userInfo.forEach(function(){
-            
+            if(userInfo.values !== ''){
+                 userInfo.classList.add("notFilled");
+            } else {
+                userInfo.classList.add("Filled");
+            }
         })
     }
 })
