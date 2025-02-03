@@ -1,30 +1,20 @@
 
-// let inputs = document.querySelectorAll(".inputs");
+const inputs = document.querySelectorAll(".inputs");
 
-// console.log(inputs.length);
-// console.log(inputs);
-
-
-let submitButton = document.querySelector(".submitButton");
-console.log(submitButton);
-
-
+const submitButton = document.querySelector(".submitButton");
 
 /* criar um evento, onde, ao clicar no submit, passar pelo array inputs e ver se está preenchido ou não, se sim, colocar o estilo verde, se não, colocar o estilo vermelho */
 
 submitButton.addEventListener('click', function(clicked){
     clicked.preventDefault();
 
-    function verificarCampos(){
-        let userInfo = document.querySelectorAll('.inputs');
+    inputs.forEach(function(){
         
-        userInfo.forEach(function(){
-            if(userInfo.values !== ''){
-                 userInfo.classList.add("notFilled");
-            } else {
-                userInfo.classList.add("Filled");
-            }
-        })
-    }
+        if(inputs.values === ""){
+            inputs.classList.add("notFilled");
+        } else {
+            inputs.classList.add("filled");
+        }
+    })
 })
 
