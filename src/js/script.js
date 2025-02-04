@@ -1,32 +1,31 @@
 
 
- const submitButton = document.querySelector(".submitButton");
- submitButton.addEventListener('click', function(clicked){
-  
+ let submitButton = document.querySelector(".submitButton");
+ submitButton.addEventListener('click', function(clicked){  
     clicked.preventDefault();
-
+});
     
+function enviarFormulario(){
+    check();
+}
 
-    function check () {
-        const inputs = document.querySelectorAll(".inputs");
+function check () {
+    const inputs = document.querySelectorAll(".inputs");
     
-     inputs.forEach(function(input){
-        let infoValidated = input.value();
-        if(){
+    inputs.forEach(function(input){
+        let infoValidated = input.value;
+
+        if(infoValidated){
          input.classList.remove("notFilled", "filled");
-         const p = document.getElementsByClassName("hide");
         }
-         if(infoValidated){
-             
-             input.classList.add("notFilled");
-          
-          
+
+        if(infoValidated){ 
+            input.classList.add("notFilled");
          } else {
              input.classList.add("filled");
          }
-     });
-    }
- });
+    });
+}
 
 
 
@@ -36,27 +35,30 @@
 
 
 
-// let submitButton = document.querySelectorAll(".submitButton");
-// console.log(submitButton);
 
-// submitButton.addEventListener("click", (clicked) => {
+// const botaoDoFormulario = document.querySelectorAll(".submitButton");
+
+// botaoDoFormulario.addEventListener("click", function (clicked) {
+
 //     clicked.preventDefaut();
+
 // });
 
-// function sendForm() {
-//     check();
+
+// function enviarFormulario() {
+//     verificarSeFoiPreenchido();
 // }
 
-// function check () {
+// function verificarSeFoiPreenchido() {
 //     let infoUser = document.querySelectorAll(".inputs");
     
 
 //     infoUser.forEach(function(input){
-//         let infoValidated = input.value();
+//         let infoValidated = input.values();
 //         console.log(infoValidated);
 //         let putMandatoryText = input.nextElementSibling;
         
-//         if(digitalInfo){
+//         if(infoValidated){
 //             input.classList.remove('filled', 'notFilled');
 //             putMandatoryText.textContent = "";
 //         }        
@@ -69,5 +71,4 @@
 //         }
 //     })
 // }
-
 
