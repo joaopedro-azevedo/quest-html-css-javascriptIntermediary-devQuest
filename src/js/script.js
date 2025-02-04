@@ -3,18 +3,26 @@ const inputs = document.querySelectorAll(".inputs");
 
 const submitButton = document.querySelector(".submitButton");
 
-/* criar um evento, onde, ao clicar no submit, passar pelo array inputs e ver se está preenchido ou não, se sim, colocar o estilo verde, se não, colocar o estilo vermelho */
-
 submitButton.addEventListener('click', function(clicked){
-    clicked.preventDefault();
+    
+    inputs.forEach(function(input){
+        
+        input.classList.remove("notFilled", "filled");
 
-    inputs.forEach(function(){
+        const p = document.getElementsByClassName("hide");
+        console.log(p);
         
         if(inputs.values === ""){
-            inputs.classList.add("notFilled");
+
+            
+
+            clicked.preventDefault();
+            input.classList.add("notFilled");
+            
+            
         } else {
-            inputs.classList.add("filled");
+            input.classList.add("filled");
         }
-    })
-})
+    });
+});
 
